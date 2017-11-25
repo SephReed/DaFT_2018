@@ -14,7 +14,7 @@
 	Phone:
 	Email: -->
 	<div id="header">
-		<h1>"PINE CONE EFFIGY" (Pine Cononagon?)</h1>
+		<h1>PINE Cononagon</h1>
 
 		Misty Nickle<br>
 		206-853-1847<br>
@@ -36,15 +36,20 @@
 		<div id="#description">
 			<h1>Description</h1>
 
-			<h2>Brief</h2>
-			The shape of this effigy is based off a Pine Cone because pine cones spread their seed by fire.  On the inside we will be playing with themes of light and dark, and mortality.  It is a three story
+			<section>
+				<h2>Brief</h2>
+				The shape of this effigy is based off a Pine Cone because pine cones spread their seed by fire.  On the inside we will be playing with themes of light and dark, and mortality.  It is a three story
+			</section>
 
+			<section>
+				<h2>The participant story</h2>
+				This year we are attempting to lead participants through something like a story by having a very clear entrance which winds it's way through scenes before reaching a soft end.  The story starts off with a set of stairs that wrap around the build and lead into an entrance on the back....
+			</section>
 
-			<h2>The participant story</h2>
-			This year we are attempting to lead participants through something like a story by having a very clear entrance which winds it's way through scenes before reaching a soft end.  The story starts off with a set of stairs that wrap around the build and lead into an entrance on the back....
-
-			<h2>Planned Features</h2>
-			Forest, Underground, Cloud lounge, Flame canon spires, Fire garden, Ambience, Afterlife Performers, Water Feature
+			<section>
+				<h2>Planned Features</h2>
+				Forest, Underground, Cloud lounge, Flame canon spires, Fire garden, Ambience, Afterlife Performers, Water Feature
+			</section>
 		</div>
 
 
@@ -78,31 +83,38 @@
 		<div>
 			<h1>Process</h1>
 
-			<h2>Management</h2>
-			Multiple teams: flame fx, decor, drama, build, fluff.
+			<section>
+				<h2>Management</h2>
+				Multiple teams: flame fx, decor, drama, build, fluff.
+			</section>
 
-			<h2>Build/Schedule</h2>
-			Here is the current plan for our order-of-operations:
-			- 1F Arches
-			- 1F Deck
-			- 1F Spiral Staircase
-			- 3F Arches
-			- 3F Decor
-			- 1F Steep outter staircase
-			- 2F Deck
-			- 1F Decor
-			- 2F Arches
-			- 2F Decor
+			<section>
+				<h2>Build/Schedule</h2>
+				Here is the current plan for our order-of-operations:
+				- 1F Arches
+				- 1F Deck
+				- 1F Spiral Staircase
+				- 3F Arches
+				- 3F Decor
+				- 1F Steep outter staircase
+				- 2F Deck
+				- 1F Decor
+				- 2F Arches
+				- 2F Decor
+			</section>
 
-			<h2>Criteria</h2>
-			<b>Safety</b> - <br>
-			<b>Transportation</b> - <br>
-			<b>Burn</b> - <br>
-			<b>Burn-Ban</b> - <br>
-			<b>Cleanup</b> - <br>
-			<b>Budget</b> - <br>
-			<b>Materials</b> - <br>
-			<b>Rentals</b> - <br>
+			<section>
+				<h2>Criteria</h2>
+
+				<b>Safety</b> - <br>
+				<b>Transportation</b> - <br>
+				<b>Burn</b> - <br>
+				<b>Burn-Ban</b> - <br>
+				<b>Cleanup</b> - <br>
+				<b>Budget</b> - <br>
+				<b>Materials</b> - <br>
+				<b>Rentals</b> - <br>
+			</section>
 		</div>
 
 
@@ -157,6 +169,8 @@ body {
 	background-color: #f9ffdd;
 	font-family: arial;
 	color: #333;
+	background-image: url("public/images/TexturesCom_SoilSand_small.png");
+	background-size: 40% auto;
 	
 }
 
@@ -196,7 +210,13 @@ h1, h2, h3 {
 
 
 #ground {
+	position: relative;
+	top: -100px;
 	padding-bottom: 50px;
+	background-image:  linear-gradient(transparent, black), url("public/images/TexturesCom_SoilCliff_noGrass.png");
+	background-size: auto, 100% auto;
+	background-repeat: no-repeat;
+	/*margin-bottom: -100px;*/
 	/*background-image: linear-gradient(#f5fbdc 40%,  #895800 75%,  black);*/
 	/*background-image: linear-gradient(#dcaa7b, #3c392a 1%, #13120d 80%, #855804, black);*/
 }
@@ -208,20 +228,26 @@ h1, h2, h3 {
 
 content > div {
 	padding-left: 30px;
+	padding-right: 5px;
 	/*background-color: #FAFAFA;*/
 }
-
-	content > div:nth-child(2n -1) {
-		/*background-color: rgba(250,250,250,0.5);	*/
-	}
-
-
-	content > div > h1 {
+	#ground  h1 {
 		position: relative;
 		left: -20px;
+		text-shadow: 1px 1px #333, 1px -1px #333, -1px -1px #333, -1px 1px #333;
+		color: #d2ffb1;
 	}
 
-		content > div > h2 {
+		section {
+			display: block;
+			background-color: rgba(255, 254, 243, 0.87);
+			border-radius: 2px;
+			margin-bottom: 20px;
+			max-width: 900px;
+			padding: 5px 12px;
+		}
+
+		section> h2 {
 			position: relative;
 			left: -10px;
 		}
