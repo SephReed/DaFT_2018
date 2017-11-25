@@ -23,8 +23,8 @@
 
 	</div>
 	<div id="ground">
-
-
+		<img id="transition" src="public/images/TexturesCom_SoilCliff_noGrass.png" width="100%">
+		<fadeDark></fadeDark>
 
 
 		<!-- Inspiration and Project Summary:
@@ -33,7 +33,9 @@
 		 -->
 
 
-		<div id="#description">
+		<div id="description">
+		
+
 			<h1>Description</h1>
 
 			<section>
@@ -81,6 +83,7 @@
 
 
 		<div>
+
 			<h1>Process</h1>
 
 			<section>
@@ -127,12 +130,53 @@
 
 
 		<!-- Attachments: Visuals/model/drawings/etc -->
-		<div>
+		<div id="attachments">
 			<h1>Attachments</h1>
+			<section>
+				<h2>Front Center</h2>
+				<img src="public/images/screens/front.png">
+			</section>
+
+			<section>
+				<h2>Top Down</h2>
+				<img src="public/images/screens/top.png">
+			</section>
+
+			<section>
+				<h2>3/4 High Front Left</h2>
+				<img src="public/images/screens/down_from_left.png">
+			</section>
+
+			<section>
+				<h2>3/4 High Back Right</h2>
+				<img src="public/images/screens/down_from_back_right.png">
+			</section>
+
+			<section>
+				<h2>Back Center</h2>
+				<img src="public/images/screens/back.png">
+			</section>
+
+			<section>
+				<h2>DNA Staircase (1st Floor)</h2>
+				<img src="public/images/screens/spiral.png"><br>
+				Model is incomplete, missing strength.
+			</section>
+
+			<section>
+				<h2>2nd Floor</h2>
+				<img src="public/images/screens/second_floor.png">
+			</section>
 		</div>
 
+
+		
 	</div>
+	<img src="public/images/Cave_1200.png" width="100%">
+
+	
 </content>
+
 
 </body>
 </html>
@@ -166,7 +210,7 @@ body, html {
 
 
 body {
-	background-color: #f9ffdd;
+	background-color: black;
 	font-family: arial;
 	color: #333;
 	background-image: url("public/images/TexturesCom_SoilSand_small.png");
@@ -199,21 +243,32 @@ h1, h2, h3 {
 	background-image: url('public/images/pine_cone_and_stones.jpg');
 	height: 400px;
 	background-position: center;
+	background-size: 100% auto;
 	/*color: white;*/
 	color: #f5fbdc;
 	font-size: 20px;
 	text-shadow: 1px 1px #333, 1px -1px #333, -1px -1px #333, -1px 1px #333;
 	padding-top: 20px;
+	padding-left: 20px;
 
 	box-shadow: inset 0px 0px 50px rgba(0,0,0,0.5);
+}
+
+content {
+	display: block;
+	
+	/*background-position: top;
+	background-size: 100% auto;*/
+	/*background-image: url("public/images/TexturesCom_SoilSand_small.png");*/
+	background-size: 40% auto;
 }
 
 
 #ground {
 	position: relative;
-	top: -100px;
+	/*top: -100px;*/
 	padding-bottom: 50px;
-	background-image:  linear-gradient(transparent, black), url("public/images/TexturesCom_SoilCliff_noGrass.png");
+	/*background-image:  linear-gradient(transparent, black), url("public/images/TexturesCom_SoilCliff_noGrass.png");*/
 	background-size: auto, 100% auto;
 	background-repeat: no-repeat;
 	/*margin-bottom: -100px;*/
@@ -221,12 +276,32 @@ h1, h2, h3 {
 	/*background-image: linear-gradient(#dcaa7b, #3c392a 1%, #13120d 80%, #855804, black);*/
 }
 
+	#transition {
+		position: absolute;
+		top: -100px;
+	}
+
+	fadeDark {
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background-image: linear-gradient(transparent, rgba(0,0,0,0.8) 800px, rgba(0,0,0,0.9) 95%, black);
+	}
+
+
+
+
 #ground > div {
 	margin-bottom: 30px;
+	position: relative;
+	z-index: 5;
 }
 
 
-content > div {
+#ground > div {
 	padding-left: 30px;
 	padding-right: 5px;
 	/*background-color: #FAFAFA;*/
@@ -251,6 +326,10 @@ content > div {
 			position: relative;
 			left: -10px;
 		}
+
+	#attachments > section {
+		text-align: center;
+	}
 
 
 
